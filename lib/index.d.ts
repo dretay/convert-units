@@ -23,6 +23,7 @@ declare module "convert-units" {
     type uAngle = "deg" | "rad" | "grad" | "arcmin" | "arcsec"; // Angle
     type uResistance = "Ω" | "kΩ" | "MΩ"; // Resistance
     type uInductance = "H" | "mH" | "uH" | "nH"; //Inductance
+    type uInductance = "F" | "mF" | "uF" | "nF" | "pF"; //Capacitance
 
     type unit = uDistance
               | uArea
@@ -48,6 +49,7 @@ declare module "convert-units" {
               | uAngle
               | uResistance
               | uInductance;
+              | uCapacitance;
 
     type measure = "distance"
                  | "area"
@@ -73,6 +75,7 @@ declare module "convert-units" {
                  | "angle"
                  | "resistance"
                  | "inductance";
+                 | "capacitance";
 
     type system = "metric"
                 | "imperial"
