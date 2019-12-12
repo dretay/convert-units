@@ -72,7 +72,7 @@ declare module "convert-units" {
                  | "reactiveEnergy"
                  | "angle"
                  | "resistance"
-                 | "inducance";
+                 | "inductance";
 
     type system = "metric"
                 | "imperial"
