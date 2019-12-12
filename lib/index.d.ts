@@ -22,6 +22,7 @@ declare module "convert-units" {
     type uReactiveEnergy = "VARh" | "mVARh" | "kVARh" | "MVARh" | "GVARH"; // Reactive Energy
     type uAngle = "deg" | "rad" | "grad" | "arcmin" | "arcsec"; // Angle
     type uResistance = "Ω" | "kΩ" | "MΩ"; // Resistance
+    type uInductance = "H" | "mH" | "uH" | "nH"; //Inductance
 
     type unit = uDistance
               | uArea
@@ -45,7 +46,8 @@ declare module "convert-units" {
               | uEnergy
               | uReactiveEnergy
               | uAngle
-              | uResistance;
+              | uResistance
+              | uInductance;
 
     type measure = "distance"
                  | "area"
@@ -69,7 +71,8 @@ declare module "convert-units" {
                  | "energy"
                  | "reactiveEnergy"
                  | "angle"
-                 | "resistance";
+                 | "resistance"
+                 | "inducance";
 
     type system = "metric"
                 | "imperial"
